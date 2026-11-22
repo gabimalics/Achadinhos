@@ -1,5 +1,5 @@
 import { Quote, Star } from "lucide-react";
-import { STATS, TESTIMONIALS } from "@/lib/store";
+import { SOCIAL_PROOF_IS_EXAMPLE, STATS, TESTIMONIALS } from "@/lib/store";
 
 export function SocialProof() {
   return (
@@ -25,7 +25,13 @@ export function SocialProof() {
           </dl>
         </div>
 
-        <ul className="mt-12 grid gap-5 md:grid-cols-3">
+        {SOCIAL_PROOF_IS_EXAMPLE && (
+          <p className="mt-8 inline-flex rounded-full border border-dashed border-urgency px-4 py-2 text-sm font-semibold text-urgency">
+            Exemplo ilustrativo: números e depoimentos fictícios, a serem trocados pelos reais.
+          </p>
+        )}
+
+        <ul className="mt-6 grid gap-5 md:grid-cols-3">
           {TESTIMONIALS.map((t) => (
             <li key={t.name}>
               <figure className="relative flex h-full flex-col rounded-3xl border border-border bg-card p-6 shadow-sm">

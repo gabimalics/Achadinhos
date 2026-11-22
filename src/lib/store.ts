@@ -169,6 +169,9 @@ export const CATEGORIES: ("Todos" | Category)[] = [
    (prints do WhatsApp/Instagram com autorização). Não publique dados inventados.
    ========================================================================== */
 
+/** Mantenha `true` enquanto os dados abaixo forem exemplos: o site mostra um aviso visível. */
+export const SOCIAL_PROOF_IS_EXAMPLE = true;
+
 export const STATS = [
   { value: "1.200+", label: "pedidos entregues" },
   { value: "4,9/5", label: "avaliação média" },
